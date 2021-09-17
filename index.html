@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/alianca.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa do Nosso Casamento</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/alianca.png">
+        <button>Rifa do Casamento do Lucas e Mariana</button>
+        <button onclick="document.location.reload(true);">Gerar nova Rifa</button>
+    </header>
+    <main>
+        <section>
+            <div class="numbers">
+                <div class="title">
+                    <h1>Números do Sorteio</h1>
+                </div>
+                <div id="tableNum" class="tableNum">
+                    <!--Diassis - Miess--><span id="1" class="selecionado"> 1 </span>
+                    <!--Diassis - Miess--><span id="2" class="selecionado"> 2 </span>
+                    <!--Diassis - Miess--><span id="3" class="selecionado"> 3 </span>
+                    <!--Caio--><span id="4" class="selecionado"> 4 </span>
+                    <!--Lucas LA--><span id="5" class="selecionado" class="selecionado"> 5 </span>
+                    <!--Vini - Miess--><span id="6" class="selecionado"> 6 </span>
+                    <!--Denis - Miess--><span id="7" class="selecionado"> 7 </span>
+                    <!--Ione--><span id="8" class="selecionado"> 8 </span>
+                    <!--Pedro Miess--><span id="9" class="selecionado"> 9 </span>
+                    <!--Pedro Miess--><span id="10" class="selecionado">10</span>
+                    <!--Vilma Mãe--><span id="11" class="selecionado">11</span>
+                    <!--RD - Miess--><span id="12" class="selecionado">12</span>
+                    <!--Renata - Miess --><span id="13" class="selecionado">13</span>
+                    <!--Caio--><span id="14" class="selecionado">14</span>
+                    <!--Lucas LA--><span id="15" class="selecionado">15</span>
+                    <!--Adriana--><span id="16" class="selecionado">16</span>
+                    <!--Poliana Miess--><span id="17" class="selecionado">17</span>
+                    <!--Ramoni--><span id="18" class="selecionado">18</span>
+                    <!--Vilma Mãe--><span id="19" class="selecionado">19</span>
+                    <span id="20">20</span>  
+                    <!-- Marcelo --><span id="21" class="selecionado">21</span>
+                    <!--Elton--><span id="22" class="selecionado">22</span>
+                    <!--Beatriz - Miess--><span id="23" class="selecionado">23</span>
+                    <!--Maria Eduarda--><span id="24" class="selecionado">24</span>
+                    <!--Elton--><span id="25" class="selecionado">25</span>
+                    <!--Mercedes--><span id="26" class="selecionado">26</span>
+                    <!--Grazi--><span id="27" class="selecionado">27</span>
+                    <!--William --><span id="28" class="selecionado">28</span>
+                    <span id="29">29</span>
+                    <!--Marcelo - Mercadinho Miess --><span id="30" class="selecionado">30</span>
+                    <!--Romulo--><span id="31" class="selecionado">31</span>
+                    <!--Romulo--><span id="32" class="selecionado">32</span>
+                    <!--Lica--><span id="33" class="selecionado">33</span>
+                    <span id="34">34</span>
+                    <!-- Rebeca Adriana--><span id="35" class="selecionado">35</span>
+                    <!--Adriana--><span id="36" class="selecionado">36</span>
+                    <span id="37">37</span>
+                    <!--Lucas LA--><span id="38" class="selecionado">38</span>
+                    <span id="39">39</span>
+                    <span id="40">40</span>
+                    <!--Romulo--><span id="41" class="selecionado">41</span>
+                    <!--Romulo--><span id="42" class="selecionado">42</span>
+                    <!--Juliana Adriana--><span id="43" class="selecionado">43</span>
+                    <!--Marcelo - Mercadinho Miess --><span id="44" class="selecionado">44</span>
+                    <!--William --><span id="45" class="selecionado">45</span>
+                    <!--Adriana--><span id="46" class="selecionado">46</span>
+                    <!--Cris Amiga Vilma--><span id="47" class="selecionado">47</span>
+                    <!--Diassis - Miess--><span id="48" class="selecionado">48</span>
+                    <!--Diassis - Miess--><span id="49" class="selecionado">49</span>
+                    <!--Diassis - Miess--><span id="50" class="selecionado">50</span>
+                    <!--Romulo--><span id="51" class="selecionado">51</span>
+                    <!--Romulo--><span id="52" class="selecionado">52</span>
+                    <!--Vanessa--><span id="53" class="selecionado">53</span>
+                    <!--Robson --><span id="54" class="selecionado">54</span>
+                    <!--Fabiana Brascol --><span id="55" class="selecionado">55</span>
+                    <!--Vilma Vó--><span id="56" class="selecionado">56</span>
+                    <!--Robson --><span id="57" class="selecionado">57</span>
+                    <!--Caio--><span id="58" class="selecionado">58</span>
+                    <span id="59">59</span>
+                    <span id="60">60</span>
+                    <!--Romulo--><span id="61" class="selecionado">61</span>
+                    <!-- Grazi --><span id="62" class="selecionado">62</span>
+                    <!--Cris Amiga Vilma--><span id="63" class="selecionado">63</span>
+                    <!--Tião--><span id="64" class="selecionado">64</span>
+                    <span id="65">65</span>
+                    <!--Lucas LA--><span id="66" class="selecionado">66</span>
+                    <!--Elton--><span id="67" class="selecionado">67</span>
+                    <!--Samara--><span id="68" class="selecionado">68</span>
+                    <!--Carol--><span id="69" class="selecionado">69</span>
+                    <span id="70">70</span>
+                    <!--Romulo--><span id="71" class="selecionado">71</span>
+                    <!--Elton--><span id="72" class="selecionado">72</span>
+                    <!--Erika--><span id="73" class="selecionado">73</span>
+                    <span id="74">74</span>
+                    <!--Juliana Adriana--><span id="75" class="selecionado">75</span>
+                    <!--Adriana--><span id="76" class="selecionado">76</span>
+                    <!-- Karina Mie Amiga da Vilma --><span id="77" class="selecionado">77</span>
+                    <span id="78">78</span>
+                    <span id="79">79</span>
+                    <span id="80">80</span>
+                    <!--Romulo--><span id="81" class="selecionado">81</span>
+                    <span id="82">82</span>
+                    <span id="83">83</span>
+                    <span id="84">84</span>
+                    <!--Robson --><span id="85" class="selecionado">85</span>
+                    <!--Adriana--><span id="86" class="selecionado">86</span>
+                    <!--Elton--><span id="87" class="selecionado">87</span>
+                    <!--Karina Adriana --><span id="88" class="selecionado">88</span>
+                    <span id="89">89</span>
+                    <!--Hellington--><span id="90" class="selecionado">90</span>
+                    <!--Romulo--><span id="91" class="selecionado">91</span>
+                    <span id="92">92</span>
+                    <span id="93">93</span>
+                    <!-- Marcelo --><span id="94" class="selecionado">94</span>
+                    <span id="95">95</span>
+                    <!--Adriana--><span id="96" class="selecionado">96</span>
+                    <span id="97">97</span>
+                    <!--Caio--><span id="98" class="selecionado">98</span>
+                    <!--Lica--><span id="99" class="selecionado">99</span>
+                    <!--Lucas LA--><span id="100" class="selecionado">100</span>
+                </div>
+            </div>
+            <div class="sorteio">
+                <div class="title">
+                    <h1>Sortear um Número</h1>
+                </div>
+                <div class="tableSor">
+                    <button onclick="gerarNum()">Gerar um Número</button>
+                </div>
+                <div class="numeroSor">
+                    <h1 id="numeroOK" class="numeroOK"></h1>
+                </div>
+            </div>
+            <div class="nome-sorteado">
+                <div class="title">
+                    <h1>Nome do Sorteado</h1>
+                </div>
+                <div class="nomeSort">
+                    <h1 id="nomeOK" class="nomeOK"></h1>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>

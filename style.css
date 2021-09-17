@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #202020;
+  align-items: center;
+  height: 20vh;
+  justify-content: space-around;
+}
+header button {
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15pt;
+  padding: 15px;
+}
+header button:first-of-type {
+  outline: 0;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15pt;
+  padding: 15px;
+  background-color: #9466FF;
+}
+header button:hover {
+  color: white;
+  background-color: #9466FF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+main section {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+}
+main section .numbers {
+  display: flex;
+  width: 800px;
+  height: 670px;
+  background-color: #404040;
+  margin: 50px 30px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+main section .numbers .title {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-align: center;
+  background-color: #202020;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main section .numbers .tableNum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+main section .numbers .tableNum span {
+  color: white;
+  padding: 15px 15px;
+  background-color: #9466FF;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 15px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+main section .numbers .tableNum span:hover {
+  cursor: pointer;
+  background-color: #7f48ff;
+}
+main section .numbers .tableNum .selecionado {
+  background-color: #202020;
+}
+main section .sorteio {
+  display: flex;
+  width: 600px;
+  height: 60%;
+  background-color: #404040;
+  margin: 50px 30px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+main section .sorteio .title {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-align: center;
+  background-color: #202020;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main section .sorteio .tableSor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main section .sorteio .tableSor button {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 15pt;
+}
+main section .sorteio .tableSor button:hover {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #9466FF;
+}
+main section .sorteio .numeroSor {
+  display: flex;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: white;
+  border-radius: 20px;
+  height: 190px;
+  align-items: center;
+  justify-content: center;
+}
+main section .sorteio .numeroSor h1 {
+  font-size: 100pt;
+  color: #9466FF;
+  font-weight: bolder;
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: scale(0.9);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.9);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+main section .nome-sorteado {
+  display: flex;
+  position: absolute;
+  width: 39.2%;
+  height: 270px;
+  margin: 448px 878px;
+  border-radius: 15px;
+  background-color: #404040;
+}
+main section .nome-sorteado .title {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-align: center;
+  background-color: #202020;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main section .nome-sorteado .nomeSort {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  margin-top: 100px;
+  margin-left: 2.5%;
+  background-color: white;
+  border-radius: 10px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sorteio-Nome {
+  display: none;
+  position: absolute;
+  opacity: 0%;
+  width: 100%;
+  height: 130%;
+  background-color: wheat;
+}
+.Sorteio-Nome .Sorteio-Win {
+  font-size: 30pt;
+  color: #202020;
+}
+
+footer {
+  display: flex;
+  min-width: 100%;
+  margin-top: 100px;
+  height: 70px;
+  background-color: transparent;
+}/*# sourceMappingURL=style.css.map */
